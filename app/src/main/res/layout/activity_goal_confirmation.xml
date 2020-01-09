@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".GoalConfirmation">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/common_application_margin"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/ConfirmGoal"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/twenty_two_sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/thirty_dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/YourGoal"
+                android:textColor="@color/dark_green"
+                android:textSize="@dimen/eighteen_sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvGoalOfUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:gravity="center"
+                android:text="@string/YourGoal"
+                android:textColor="@color/light_green"
+                android:textSize="@dimen/eighteen_sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/TotalDaysYouCompleted"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/fourteen_sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvGoalCompletedDays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/TotalDaysYouCompleted"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen_sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/DidYouCompletedYourGoal"
+                android:textColor="@color/light_orange"
+                android:textSize="@dimen/sixteen_sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/five_dp"
+                    android:layout_weight="1"
+                    android:background="@color/btn_green"
+                    android:onClick="onYesBtnClick"
+                    android:text="@string/Yes"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/five_dp"
+                    android:layout_weight="1"
+                    android:background="@color/btn_negative"
+                    android:onClick="onNoBtnClick"
+                    android:text="@string/No"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/hundred_fifty_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:background="@color/btn_cancel"
+                android:onClick="onCancelBtnClick"
+                android:text="@string/Cancel"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

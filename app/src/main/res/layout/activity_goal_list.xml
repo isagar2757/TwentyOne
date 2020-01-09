@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/common_application_margin"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/YourGoalList"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/eighteen_sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="@dimen/five_dp">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/btn_green"
+                android:onClick="onAddNewGoal"
+                android:text="@string/AddGoal"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvGoalList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/five_dp"
+            android:layout_weight="1"></ListView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/five_dp"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:padding="@dimen/ten_dp"
+                android:layout_height="wrap_content"
+                android:background="@color/btn_refresh"
+                android:onClick="onViewRecords"
+                android:text="@string/ViewGoalRecords"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

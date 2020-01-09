@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.twentyone">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo1"
+        android:label="21"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".GoalConfirmation" />
+        <activity android:name=".InstructionsActivity" />
+        <activity android:name=".GoalListActivity" />
+        <activity android:name=".AddGoalActivity" />
+        <activity android:name=".UserRecordsActivity" />
+        <activity android:name=".AdminAddQuotesActivity" />
+        <activity android:name=".AdminQuoteDeleteActivity" />
+        <activity android:name=".AddPreGoals" />
+
+    </application>
+
+</manifest> <!-- android:roundIcon="@mipmap/ic_launcher_round" -->

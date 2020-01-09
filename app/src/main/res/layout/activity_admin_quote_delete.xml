@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical"
+    tools:context=".AdminQuoteDeleteActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/common_application_margin"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/five_dp"
+            android:gravity="center"
+            android:text="@string/ChangeYourQuotes"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/twenty_two_sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:textColor="@color/edit_text"
+            android:id="@+id/etQuoteChange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:textSize="@dimen/eighteen_sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+android:background="@color/btn_green"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="@dimen/five_dp"
+                    android:layout_weight="1"
+                    android:onClick="onUpdateQuotesBtnClick"
+                    android:text="@string/UpdateQuotes" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/five_dp"
+                    android:layout_weight="1"
+                    android:background="@color/dark_red"
+                    android:textColor="@color/white"
+                    android:onClick="onDeleteQuotesBtnClick"
+                    android:text="@string/DeleteQuotes" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/hundred_fifty_dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:layout_weight="1"
+                android:background="@color/btn_cancel"
+                android:textColor="@color/white"
+                android:onClick="onCancelbtnClick"
+                android:text="@string/Cancel" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
